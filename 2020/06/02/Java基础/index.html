@@ -6,20 +6,42 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>我的第一篇博客 | 会双截棍的程序员</title>
+  <title>Java基础 | 会双截棍的程序员</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一章第二章第三章">
+  <meta name="description" content="Java基础1、ArrayList和LinkedList的底层实现和区别1）、ArrayList是实现了基于动态数组的数据结构，LinkedList基于链表的数据结构。 2）、对于随机访问get和set，ArrayList优于LinkedList，因为ArrayList可以随机定位，而LinkedList要移动指针一步一步的移动到节点处。 3）、对于新增和删除操作add和remove，LinedL">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇博客">
-<meta property="og:url" content="http://yoursite.com/2020/06/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:title" content="Java基础">
+<meta property="og:url" content="http://yoursite.com/2020/06/02/Java%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="会双截棍的程序员">
-<meta property="og:description" content="第一章第二章第三章">
+<meta property="og:description" content="Java基础1、ArrayList和LinkedList的底层实现和区别1）、ArrayList是实现了基于动态数组的数据结构，LinkedList基于链表的数据结构。 2）、对于随机访问get和set，ArrayList优于LinkedList，因为ArrayList可以随机定位，而LinkedList要移动指针一步一步的移动到节点处。 3）、对于新增和删除操作add和remove，LinedL">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-06-02T06:21:36.000Z">
-<meta property="article:modified_time" content="2020-06-02T06:34:03.529Z">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps23.png">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps24.png">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps25.png">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps26.png">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps27.png">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps28.jpg">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps29.jpg">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps30.png">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps31.png">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps32.png">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps33.png">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps34.png">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps35.png">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps36.png">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps37.png">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps38.jpg">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps39.png">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps40.png">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps41.png">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps42.png">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps43.png">
+<meta property="og:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps44.png">
+<meta property="article:published_time" content="2020-06-02T11:17:37.223Z">
+<meta property="article:modified_time" content="2020-06-02T11:17:37.639Z">
 <meta property="article:author" content="Cola Cao">
-<meta property="article:tag" content="cola">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps23.png">
   
     <link rel="alternative" href="/atom.xml" title="会双截棍的程序员" type="application/atom+xml">
   
@@ -155,27 +177,344 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的第一篇博客" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Java基础" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      我的第一篇博客
+      Java基础
     </h1>
   
 
         
-        <a href="/2020/06/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2020-06-02T06:21:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-02</time>
+        <a href="/2020/06/02/Java%E5%9F%BA%E7%A1%80/" class="archive-article-date">
+  	<time datetime="2020-06-02T11:17:37.223Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-02</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2>
+        <h1 id="Java基础"><a href="#Java基础" class="headerlink" title="Java基础"></a>Java基础</h1><h2 id="1、ArrayList和LinkedList的底层实现和区别"><a href="#1、ArrayList和LinkedList的底层实现和区别" class="headerlink" title="1、ArrayList和LinkedList的底层实现和区别"></a>1、<strong>ArrayList和LinkedList的底层实现和区别</strong></h2><p>1）、ArrayList是实现了基于动态数组的数据结构，LinkedList基于链表的数据结构。</p>
+<p>2）、对于随机访问get和set，ArrayList优于LinkedList，因为ArrayList可以随机定位，而LinkedList要移动指针一步一步的移动到节点处。</p>
+<p>3）、对于新增和删除操作add和remove，LinedList比较占优势，只需要对指针进行修改即可，而ArrayList要移动数据来填补被删除的对象的空间。</p>
+<p>4）、ArrayList的空间浪费主要体现在在list列表的结尾预留一定的容量空间，而LinkedList的空间花费则体现在它的每一个元素都需要消耗相当的空间。</p>
+<p>5）、ArrayList和LinkedList都是非同步的，当我们需要创建同步的list时，需要自己指定，即：</p>
+<p>6）List<T> list = Collection.synchronizedList(new ArrayList<T>());</p>
+<p>7）List<T> list = Collection.sysnchronizedList(new LinkedList<T>());</p>
+<p>8）、Vector与ArrayList一样，也是通过数组实现的，不同的是它支持线程的同步，即某一时刻只有一个线程能够写Vector，避免多线程同时写而引起的不一致性，但实现同步需要很高的花费，因此，访问它比访问ArrayList慢。</p>
+<p>9）、除了具有Collection接口必备的iterator()方法外，List还提供一个listIterator()方法，返回一个ListIterator接口，和标准的Iterator接口相比，ListIterator多了一些add()之类的方法，允许添加，删除，设定元素，还能向前或向后遍历。</p>
+<h2 id="2、HashMap的底层实现（jdk1-7）"><a href="#2、HashMap的底层实现（jdk1-7）" class="headerlink" title="2、HashMap的底层实现（jdk1.7）"></a>2、<strong>HashMap的底层实现（jdk1.7）</strong></h2><p>1）、HashMap概述：</p>
+<p> HashMap是基于哈希表的Map接口的非同步实现。此实现提供所有可选的映射操作，并允许使用null值和null键。此类不保证映射的顺序，特别是它不保证该顺序恒久不变。</p>
+<p>2）、HashMap的数据结构：</p>
+<p>HashMap实际上是一个“链表散列”的数据结构，即数组和链表的结合体。</p>
+<p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps23.png" alt="img"> </p>
+<p>3）、HashMap的存取实现：</p>
+<p>（1）、存储</p>
+<p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps24.png" alt="img"> </p>
+<p>4）、HashMap的resize（rehash）</p>
+<p>5）</p>
+<p>6）</p>
+<p>7）、Fail-Fast机制</p>
+<p> 从上面的源代码中可以看出：当我们往HashMap中put元素的时候，先根据key的hashCode重新计算hash值，根据hash值得到这个元素在数组中的位置（即下标），如果数组该位置上已经存放有其他元素了，那么在这个位置上的元素将以链表的形式存放，新加入的放在链头，最先加入的放在链尾。如果数组该位置上没有元素，就直接将该元素放到此数组中的该位置上。还有一点，如果新put的key如果已经存在，则将原来的key上的value改成新put的key的value值。</p>
+<p>（2）、indexFor(int h, int length) </p>
+<p> 对于任意给定的对象，只要它的 hashCode() 返回值相同，那么程序调用 hash(int h) 方法所计算得到的 hash 码值总是相同的。我们首先想到的就是把hash值对数组长度取模运算，这样一来，元素的分布相对来说是比较均匀的。但是，“模”运算的消耗还是比较大的，在HashMap中是这样做的：调用 indexFor(int h, int length) 方法来计算该对象应该保存在 table 数组的哪个索引处。</p>
+<p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps25.png" alt="img"> </p>
+<p> 这个方法非常巧妙，它通过 h &amp; (table.length -1) 来得到该对象的保存位，而HashMap底层数组的长度总是 2 的 n 次方，当length总是 2 的n次方时，h&amp; (length-1)运算等价于对length取模，也就是h%length，但是&amp;比%具有更高的效率。</p>
+<p>4）、 HashMap的resize（rehash）：</p>
+<p>   当HashMap中的元素越来越多的时候，hash冲突的几率也就越来越高，因为数组的长度是固定的。所以为了提高查询的效率，就要对HashMap的数组进行扩容，数组扩容这个操作也会出现在ArrayList中，这是一个常用的操作，而在HashMap数组扩容之后，最消耗性能的点就出现了：原数组中的数据必须重新计算其在新数组中的位置，并放进去，这就是resize。</p>
+<p>   那么HashMap什么时候进行扩容呢？当HashMap中的元素个数超过数组大小<em>loadFactor（加载因子）时，就会进行数组扩容，loadFactor的默认值为0.75，这是一个折中的取值。也就是说，默认情况下，数组大小为16，那么当HashMap中元素个数超过16</em>0.75=12的时候，就把数组的大小扩展为 2*16=32，即扩大一倍，然后重新计算每个元素在数组中的位置，而这是一个非常消耗性能的操作，所以如果我们已经预知HashMap中元素的个数，那么预设元素的个数能够有效的提高HashMap的性能。</p>
+<p>5）、Fail-Fast机制：</p>
+<p> 我们知道java.util.HashMap不是线程安全的，因此如果在使用迭代器的过程中有其他线程修改了map，那么将抛出ConcurrentModificationException，这就是所谓fail-fast策略。</p>
+<p>这一策略在源码中的实现是通过modCount域，modCount顾名思义就是修改次数，对HashMap内容的修改都将增加这个值，那么在迭代器初始化过程中会将这个值赋给迭代器的expectedModCount。</p>
+<p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps26.png" alt="img"> </p>
+<p>   在迭代过程中，判断modCount跟expectedModCount是否相等，如果不相等就表示已经有其他线程修改了Map。注意到modCount声明为volatile，保证线程之间修改的可见性。</p>
+<p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps27.png" alt="img"> </p>
+<p>  在HashMap的API中指出：</p>
+<p>   由所有HashMap类的“collection 视图方法”所返回的迭代器都是快速失败的：在迭代器创建之后，如果从结构上对映射进行修改，除非通过迭代器本身的 remove 方法，其他任何时间任何方式的修改，迭代器都将抛出ConcurrentModificationException。因此，面对并发的修改，迭代器很快就会完全失败，而不冒在将来不确定的时间发生任意不确定行为的风险。</p>
+<p>   注意，迭代器的快速失败行为不能得到保证，一般来说，存在非同步的并发修改时，不可能作出任何坚决的保证。快速失败迭代器尽最大努力抛出 ConcurrentModificationException。因此，编写依赖于此异常的程序的做法是错误的，正确做法是：迭代器的快速失败行为应该仅用于检测程序错误。</p>
+<p>6）、java1.8 HashMap的扩充：</p>
+<p>使用一个Node数组来存储数据，但这个Node可能是链表结构，也可能是红黑树结构；如果插入的key的hashcode相同，那么这些key也会被定位到Node数组的同一个格子里；如果同一个格子里的key不超过8个，使用链表结构存储。如果超过了8个，那么会调用treeifyBin函数，将链表转换为红黑树；那么即使hashcode完全相同，由于红黑树的特点，查找某个特定元素，也只需要O(log n)的开销，也就是说put/get的操作的时间复杂度最差只有O(log n)。</p>
+<h2 id="3、equals方法和hashCode方法"><a href="#3、equals方法和hashCode方法" class="headerlink" title="3、equals方法和hashCode方法"></a>3、<strong>equals方法和hashCode方法</strong></h2><p>1）、首先需要明确知道的一点是：hashCode()方法和equals()方法是在Object类中就已经定义了的，所以在java中定义的任何类都会有这两个方法。原始的equals()方法用来比较两个对象的地址值，而原始的hashCode()方法用来返回其所在对象的物理地址。</p>
+<p>2）、equals的特点，对于非空引用：</p>
+<p>（1）、自反性：x.equals(x) return true ；</p>
+<p>（2）、对称性：x.equals(y)为true，那么y.equals(x)也为true；</p>
+<p>（3）、传递性：x.equals(y)为true，y.equals(z)为true，那么x.equals(z)也为true；</p>
+<p>（4）、一致性：x.equals(y)的第一次调用为true，那么x.equals(y)的第二次，第三次，。。。，第n次调用也为true，前提条件是在比较之间没有修改x，也没有修改y。</p>
+<p>（5）、x.equals(null)返回false。</p>
+<p>3）、hashCode方法的特点：</p>
+<p>（1）、在java应用的一次执行过程当中，对于同一个对象的hashCode方法的多次调用，应该返回同样的值。(前提是该对象的信息没有发生改变)；</p>
+<p>（2）、对于两个对象来说，如果使用equals方法比较返回true，那么这两个对象的hashCode值一定是相同的；</p>
+<p>（3）、对于两个对象来说，如果使用equals方法比较返回false，那么这两个对象的hashCode值不要求一定不同，也就是说可以相同，也可以不同。但是，如果不同，则可以提高应用的性能。</p>
+<h2 id="4、-Synchronized和-ReentrantLock"><a href="#4、-Synchronized和-ReentrantLock" class="headerlink" title="4、**Synchronized和**ReentrantLock"></a><strong>4、**</strong>Synchronized和<strong>**ReentrantLock</strong></h2><p>1）、ReentrantLock 拥有Synchronized相同的并发性和内存语义，此外还多了 轮询锁、定时锁等候和可中断锁等候等一些特性；线程A和B都要获取对象O的锁定，假设A获取了对象O锁，B将等待A释放对O的锁定；如果使用 synchronized ，如果A不释放，B将一直等下去，不能被中断；如果 使用ReentrantLock，如果A不释放，可以使B在等待了足够长的时间以后，中断等待，而干别的事情。ReentrantLock获取锁定与三种方式：<br>    a)  lock(), 如果获取了锁立即返回，如果别的线程持有锁，当前线程则一直处于休眠状态，直到获取锁</p>
+<p>b) tryLock(), 如果获取了锁立即返回true，如果别的线程正持有锁，立即返回false；</p>
+<p>c)tryLock(long timeout,<a href="http://houlinyan.iteye.com/java/util/concurrent/TimeUnit.html" target="_blank" rel="noopener">TimeUnit</a> unit)，如果获取了锁定立即返回true，如果别的线程正持有锁，会等待参数给定的时间，在等待的过程中，如果获取了锁定，就返回true，如果等待超时，返回false；</p>
+<p>d) lockInterruptibly(),如果获取了锁定立即返回，如果没有获取锁定，当前线程处于休眠状态，直到获取到锁，或者当前线程被别的线程中断</p>
+<p>2）、synchronized是在JVM层面上实现的，不但可以通过一些监控工具监控synchronized的锁定，而且在代码执行时出现异常，JVM会自动释放锁定，但是使用Lock则不行，lock是通过代码实现的，要保证锁定一定会被释放，就必须将unLock()放到finally{}中</p>
+<p>3）、在资源竞争不是很激烈的情况下，Synchronized的性能要优于ReetrantLock，但是在资源竞争很激烈的情况下，Synchronized的性能会下降几十倍，但是ReetrantLock的性能能维持常态。</p>
+<h2 id="5、java-并发编程代码原子性、可见性、有序性如何保证？"><a href="#5、java-并发编程代码原子性、可见性、有序性如何保证？" class="headerlink" title="5、java 并发编程代码原子性、可见性、有序性如何保证？"></a><strong>5、java 并发编程代码原子性、可见性、有序性如何保证？</strong></h2><h3 id="1）、原子性："><a href="#1）、原子性：" class="headerlink" title="1）、原子性："></a><strong>1）、原子性：</strong></h3><p>Java内存模型只保证了基本读取和赋值是原子性操作，如果要实现更大范围操作的原子性，可以通过synchronized和Lock来实现。由于synchronized和Lock能够保证任一时刻只有一个线程执行该代码块，那么自然就不存在原子性问题了，从而保证了原子性。</p>
+<h3 id="2）、可见性："><a href="#2）、可见性：" class="headerlink" title="2）、可见性："></a><strong>2）、可见性：</strong></h3><p>对于可见性，Java提供了volatile关键字来保证可见性。当一个共享变量被volatile修饰时，它会保证修改的值会立即被更新到主存，当有其他线程需要读取时，它会去内存中读取新值。</p>
+<p>而普通的共享变量不能保证可见性，因为普通共享变量被修改之后，什么时候被写入主存是不确定的，当其他线程去读取时，此时内存中可能还是原来的旧值，因此无法保证可见性。</p>
+<p>另外，通过synchronized和Lock也能够保证可见性，synchronized和Lock能保证同一时刻只有一个线程获取锁然后执行同步代码，并且在释放锁之前会将对变量的修改刷新到主存当中。因此可以保证可见性。</p>
+<h3 id="3）、-有序性："><a href="#3）、-有序性：" class="headerlink" title="3）、**有序性：**"></a><strong>3）、**</strong>有序性：**</h3><p>在Java内存模型中，允许编译器和处理器对指令进行重排序，但是重排序过程不会影响到单线程程序的执行，却会影响到多线程并发执行的正确性。</p>
+<p>在Java里面，可以通过volatile关键字来保证一定的“有序性”。另外可以通过synchronized和Lock来保证有序性，很显然，synchronized和Lock保证每个时刻是有一个线程执行同步代码，相当于是让线程顺序执行同步代码，自然就保证了有序性。</p>
+<h2 id="6、-ConcurrentHashMapper的实现"><a href="#6、-ConcurrentHashMapper的实现" class="headerlink" title="6、**ConcurrentHashMapper的实现**"></a><strong>6、**</strong>ConcurrentHashMapper的实现**</h2><h3 id="1）、jdk-1-7的实现"><a href="#1）、jdk-1-7的实现" class="headerlink" title="1）、jdk 1.7的实现"></a><strong>1）、jdk 1.7的实现</strong></h3><p>（1）、数据结构:在jdk1.7中采用Segment + HashEntry的方式进行实现</p>
+<p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps28.jpg" alt="img"> </p>
+<p>其中Segment在实现上继承了ReentrantLock，这样就自带了锁的功能。</p>
+<p>（2）、put实现</p>
+<p>当执行put方法插入数据时，根据key的hash值，在Segment数组中找到相应的位置，如果相应位置的Segment还未初始化，则通过CAS进行赋值，接着执行Segment对象的put方法通过加锁机制插入数据，实现如下：</p>
+<p>场景：线程A和线程B同时执行相同Segment对象的put方法</p>
+<p>a、线程A执行tryLock()方法成功获取锁，则把HashEntry对象插入到相应的位置；</p>
+<p>b、线程B获取锁失败，则执行scanAndLockForPut()方法，在scanAndLockForPut方法中，会通过重复执行tryLock()方法尝试获取锁，在多处理器环境下，重复次数为64，单处理器重复次数为1，当执行tryLock()方法的次数超过上限时，则执行lock()方法挂起线程B；</p>
+<p>c、当线程A执行完插入操作时，会通过unlock()方法释放锁，接着唤醒线程B继续执行；</p>
+<p>（3）、Size的实现</p>
+<p>先采用不加锁的方式，连续计算元素的个数，最多计算3次：</p>
+<p>a、如果前后两次计算结果相同，则说明计算出来的元素个数是准确的；</p>
+<p>b、如果前后两次计算结果都不同，则给每个Segment进行加锁，再计算一次元素的个数；</p>
+<h3 id="2）、-jdk-1-8的实现"><a href="#2）、-jdk-1-8的实现" class="headerlink" title="2）、**jdk 1.8的实现**"></a><strong>2）、**</strong>jdk 1.8的实现**</h3><p>（1）、数据结构：</p>
+<p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps29.jpg" alt="img"> </p>
+<p>（2）、put实现</p>
+<p>1、如果相应位置的Node还未初始化，则通过CAS插入相应的数据；</p>
+<p>2、如果相应位置的Node不为空，且当前该节点不处于移动状态，则对该节点加synchronized锁，如果该节点的hash不小于0，则遍历链表更新节点或插入新节点；</p>
+<p>3、如果该节点是TreeBin类型的节点，说明是红黑树结构，则通过putTreeVal方法往红黑树中插入节点；</p>
+<h2 id="7、tomcat-server-xml文件"><a href="#7、tomcat-server-xml文件" class="headerlink" title="7、tomcat server.xml文件"></a><strong>7、tomcat server.xml文件</strong></h2><p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps30.png" alt="img"> </p>
+<h3 id="1）、元素"><a href="#1）、元素" class="headerlink" title="1）、元素"></a><strong>1）、<Server>元素</strong></h3><p>它代表整个容器,是Tomcat实例的顶层元素.由org.apache.catalina.Server接口来定义.它可以包含一个或多个 “Service”实例.并且它不能做为任何元素的子元素。</p>
+<p><strong>属性：</strong></p>
+<p><strong>p**</strong>ort：**指定一个端口，这个端口负责监听关闭tomcat的请求。</p>
+<p><strong>s**</strong>hutdown：**指定向端口发送的命令字符串。</p>
+<h3 id="2）、元素"><a href="#2）、元素" class="headerlink" title="2）、元素"></a><strong>2）、<Service>元素</strong></h3><p><Service>元素 该元素由org.apache.catalina.Service接口定义,它包含一个<Engine>元素,以及一个或多个<Connector>,这些Connector元素共享用同一个Engine元素。</p>
+<p><strong>属性：</strong></p>
+<p><strong>name：</strong>指定service的名字。</p>
+<h3 id="3）、元素"><a href="#3）、元素" class="headerlink" title="3）、元素"></a><strong>3）、<Connector>元素</strong></h3><p>连接器，负责接收客户的请求，以及向客户端回送响应的消息。</p>
+<p><strong>http连接器（属性）:</strong></p>
+<p><strong>protocol**</strong>：**接受协议，默认值必须为HTTP/1.1，如果使用AJP处理器，该值必须为AJP/1.3。</p>
+<p><strong>port：</strong>服务端套接字监听的TCP端口号，默认值为8080（必须）。</p>
+<p><strong>connectionTimeout：</strong>设置连接的超时值，以毫秒为单位。默认值为60000=60秒。</p>
+<p><strong>redirectPort：</strong>如连接器不支持SSL请求，如收到SSL请求，Catalina容器将会自动重定向指定的端口号，让其进行处理。</p>
+<p><strong>maxThreads：</strong>支持的最大并发连接数，默认为200。</p>
+<p><strong>address：</strong>指定连接器监听的地址，默认为所有地址，即0.0.0.0。</p>
+<p><strong>acceptCount：</strong>指定当所有可以使用的处理请求的线程数都被使用时，可以放到处理队列中的请求数，超过这个数的请求将不予处理，默认值为10。</p>
+<p><strong>enableLookups：</strong>如果为true，则可以通过调用request.getRemoteHost()进行DNS查询来得到远程客户端的实际主机名，若为false则不进行DNS查询，而是返回其ip地址。</p>
+<p><strong>maxSpareThreads**</strong>：**允许存在空闲线程的最大数目，默认值为50。</p>
+<p><strong>minSpareThreads：</strong>设当连接器第一次启协创建线程的数目，确保至少有这么多的空闲线程可用。默认值为4。</p>
+<p><strong>URIEncoding：</strong>用于解码URL的字符编码，没有指定默认值为ISO-8859-1。</p>
+<p><strong>maxHttpHeaderSize：</strong>HTTP请求和响应头的最大量，以字节为单位，默认值为4096字节。</p>
+<p>​    <strong>AJP连接器：</strong></p>
+<p>用于将Apache与Tomcat集成在一起，当Apache接收到动态内容请求时，通过在配置中指定的端口号将请求发送给在此端口号上监听的AJP连接器组件。</p>
+<h3 id="4）、元素"><a href="#4）、元素" class="headerlink" title="4）、元素"></a><strong>4）、<Engine>元素</strong></h3><p>每个Service元素只能有一个Engine元素.处理在同一个<Service>中所有<Connector>元素接收到的客户请求。在<Engine>可以包含如下元素<Logger>, <Realm>, <Value>, <Host>。</p>
+<p><strong>属性：</strong></p>
+<p><strong>defaultHost：</strong>指定缺省的处理请求的主机名，它至少与其中的一个host元素的name属性值是一样的。</p>
+<h3 id="5）、元素"><a href="#5）、元素" class="headerlink" title="5）、元素"></a><strong>5）、<Host>元素</strong></h3><p>一个Engine元素可以包含多个<Host>元素.每个<Host>的元素定义了一个虚拟主机.它包含了一个或多个Web应用。<Host>元素中可以包含如下子元素 <Logger>, <Realm>, <Value>, <Context>。</p>
+<p><strong>属性：</strong></p>
+<p><strong>name：</strong>指定主机名。</p>
+<p><strong>appBase：</strong>应用程序基本目录，即存放应用程序的目录。</p>
+<p><strong>unpackWARs：</strong>如果为true，则tomcat会自动将WAR文件解压，否则不解压，直接从WAR文件中运行应用程序。</p>
+<p><strong>autoDeploy：</strong>如果此项设为true,表示Tomcat服务处于运行状态时,能够监测appBase下的文件,如果有新有web应用加入进来,会自运发布这个WEB应用。</p>
+<p><strong>deployOnStartup：</strong>如果此项设为true,表示Tomcat服务器启动时会自动发布appBase目录下所有的Web应用.如果Web应用 中的server.xml没有相应的<Context>元素,将采用Tomcat默认的Context。</p>
+<h3 id="6）、元素"><a href="#6）、元素" class="headerlink" title="6）、元素"></a><strong>6）、<Context>元素</strong></h3><p>每个&lt;Context元素代表了运行在虚拟主机上的单个Web应用。</p>
+<p><strong>属性：</strong></p>
+<p><strong>docBase：</strong>应用程序的路径或者WAR文件的存放路径。</p>
+<p><strong>path：</strong>表示此web应用程序的url的前缀，这样请求的url为<a href="http://localhost:8080/path/****" target="_blank" rel="noopener">http://localhost:8080/path/****</a>。</p>
+<p><strong>r**</strong>eloadable：**这个属性非常重要，如果为true，则tomcat会自动检测应用程序的/WEB-INF/lib 和/WEB-INF/classes目录的变化，自动装载新的应用程序，我们可以在不重起tomcat的情况下改变应用程序。</p>
+<h2 id="8、Java反射机制"><a href="#8、Java反射机制" class="headerlink" title="8、Java反射机制"></a>8、<strong>Java反射机制</strong></h2><p>简介：</p>
+<p>JAVA反射机制是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意一个方法和属性；这种动态获取信息以及动态调用对象方法的功能称为java语言的反射机制。</p>
+<p>当我们的java文件被编译完生成.class文件之后，将由相应的加载器将字节文件.class加载到JVM，然后JVM 便自动产生一个Class object，Class object是Reflection故事起源。针对任何您想探勘的类，唯有先为它产生一个Class object，接下来才能经由后者唤起为数十多个的Reflection APIs。</p>
+<p>获取class对象的四种方法：</p>
+<p>第一种：运用getClass()</p>
+<p>String str = “abc”;</p>
+<p>Class c1 = str.getClass();</p>
+<p>第二种：运用Class.forName()</p>
+<p>Class c1 = Class.forName (“java.lang.String”);</p>
+<p>第三种：运用TYPE 语法</p>
+<p>Class c1 = Boolean.TYPE;</p>
+<p>Class c2 = Byte.TYPE;</p>
+<p>第四种：运用类的class属性</p>
+<p>Class c1 = String.class;</p>
+<p>class常用方法：</p>
+<p>1）、getModifier()方法，返回类的修饰符（public、private、protected），此方法适合判断方法和属性的修饰符。</p>
+<p>2）、getName()方法，返回类的名称。</p>
+<p>3）、getDeclaredConstructors()方法，返回构造函数Method []数组。</p>
+<p>4）、getDeclaredMethods()方法，返回方法Mothod []数组。</p>
+<p>5）、getDeclaredMethod(String mothodName,Class …)，返回具体的方法。</p>
+<p>6）、mothod.invoke(Ojbect obj,Class …)，调用方法。</p>
+<p>例子：</p>
+<p>​        Class c = Class.forName(“niukewang.Solution”);</p>
+<p>​        Object instance = c.newInstance();</p>
+<p>​        int modifiers =  c.getModifiers();</p>
+<p>​        System.out.println(modifiers);</p>
+<p>​        Class [] parameterTypes = new Class[2];</p>
+<p>​        parameterTypes[0] = String.class;</p>
+<p>​        parameterTypes[1] = Integer.TYPE;</p>
+<p>​        Method m = c.getDeclaredMethod(“LeftRotateString”, parameterTypes );</p>
+<p>​        System.out.println(m.getModifiers());</p>
+<p>​        System.out.println(m.invoke(instance,”helloworld”,new Integer(3)).toString());</p>
+<h2 id="9、-进程和线程"><a href="#9、-进程和线程" class="headerlink" title="9、**进程和线程**"></a><strong>9、**</strong>进程和线程**</h2><h3 id="1）、-定义"><a href="#1）、-定义" class="headerlink" title="1）、**定义**"></a><strong>1）、**</strong>定义**</h3><p>进程是一个具有独立功能的程序关于某个数据集合的一次运行活动。它可以申请和拥有系统资源，是一个动态的概念，是一个活动的实体。它不只是程序的代码，还包括当前的活动，通过程序计数器的值和处理寄存器的内容来表示。</p>
+<p>通常在一个进程中可以包含若干个线程，它们可以利用进程所拥有的资源。在引入线程的操作系统中，通常都是把<strong>进程作为分配资源的基本单位</strong>，而把<strong>线程作为独立运行和独立调度的基本单位</strong>。由于线程比进程更小，基本上不拥有系统资源，故对它的调度所付出的开销就会小得多，能更高效的提高系统内多个程序间并发执行的程度。</p>
+<p>线程和进程的区别在于，子进程和父进程有不同的代码和数据空间，而多个线程则共享数据空间，每个线程有自己的执行堆栈和程序计数器为其执行上下文。多线程主要是为了节约CPU时间，发挥利用，根据具体情况而定。线程的运行中需要使用计算机的内存资源和CPU。</p>
+<h3 id="2）、区别归纳"><a href="#2）、区别归纳" class="headerlink" title="2）、区别归纳"></a><strong>2）、区别归纳</strong></h3><p><strong>a.地址空间和其它资源：</strong>进程间相互独立，同一进程的各线程间共享。某进程内的线程在其它进程不可见。</p>
+<p><strong>b.通信：</strong>进程间通信IPC，线程间可以直接读写进程数据段（如全局变量）来进行通信——需要进程同步和互斥手段的辅助，以保证数据的一致性。</p>
+<p><strong>c.调度和切换：</strong>线程上下文切换比进程上下文切换要快得多。</p>
+<p>d.在多线程OS中，进程不是一个可执行的实体。</p>
+<h2 id="10、Java创建线程的方法"><a href="#10、Java创建线程的方法" class="headerlink" title="10、Java创建线程的方法"></a><strong>10、Java创建线程的方法</strong></h2><h3 id="1）、继承Thread类"><a href="#1）、继承Thread类" class="headerlink" title="1）、继承Thread类"></a><strong>1）、继承Thread类</strong></h3><p>（1）、定义Thread类的子类，并重写该类的run方法，该run方法的方法体就代表了线程要完成的任务。因此把run()方法称为执行体。</p>
+<p>（2）、创建Thread子类的实例，即创建了线程对象。</p>
+<p>（3）、调用线程对象的start()方法来启动该线程。</p>
+<p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps31.png" alt="img"> </p>
+<h3 id="2）、实现Runnable接口"><a href="#2）、实现Runnable接口" class="headerlink" title="2）、实现Runnable接口"></a><strong>2）、实现Runnable接口</strong></h3><p>（1）、定义runnable接口的实现类，并重写该接口的run()方法，该run()方法的方法体同样是该线程的线程执行体。</p>
+<p>（2）、创建 Runnable实现类的实例，并依此实例作为Thread的target来创建Thread对象，该Thread对象才是真正的线程对象。</p>
+<p>（3）、调用线程对象的start()方法来启动该线程。</p>
+<p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps32.png" alt="img"> </p>
+<h3 id="3）、通过Callable和-FutureTask-创建线程"><a href="#3）、通过Callable和-FutureTask-创建线程" class="headerlink" title="3）、通过Callable和**FutureTask**创建线程"></a><strong>3）、通过Callable和**</strong>FutureTask<strong>**创建线程</strong></h3><p>（1）、创建Callable接口的实现类，并实现call()方法，该call()方法将作为线程执行体，<strong>并且有返回值。</strong></p>
+<p>（2）、创建Callable实现类的实例，使用FutureTask类来包装Callable对象，该FutureTask对象封装了该Callable对象的call()方法的返回值。</p>
+<p>（3）、使用FutureTask对象作为Thread对象的target创建并启动新线程。</p>
+<p>（4）、调用FutureTask对象的get()方法来获得子线程执行结束后的返回值。</p>
+<p>（5）、调用线程对象的start()方法启动线程。</p>
+<p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps33.png" alt="img"> </p>
+<h3 id="4）、三种方式的比较"><a href="#4）、三种方式的比较" class="headerlink" title="4）、三种方式的比较"></a><strong>4）、三种方式的比较</strong></h3><p>采用实现Runnable、Callable接口的方式创见多线程时，<strong>优势是：</strong>线程类只是实现了Runnable接口或Callable接口，还可以继承其他类。</p>
+<p>在这种方式下，<strong>多个线程可以共享同一个target对象</strong>，所以非常适合多个相同线程来处理同一份资源的情况，从而可以将CPU、代码和数据分开，形成清晰的模型，较好地体现了面向对象的思想。</p>
+<p><strong>劣势是：</strong>编程稍微复杂，如果要访问当前线程，则必须使用Thread.currentThread()方法。</p>
+<p>使用继承Thread类的方式创建多线程时<strong>优势是：</strong>编写简单，如果需要访问当前线程，则无需使用Thread.currentThread()方法，直接使用this即可获得当前线程。</p>
+<p>劣势是：线程类已经继承了Thread类，所以不能再继承其他父类。</p>
+<h2 id="11、Linux常用命令"><a href="#11、Linux常用命令" class="headerlink" title="11、Linux常用命令"></a><strong>11、Linux常用命令</strong></h2><p>Top：查看CPU负载，开机时间，内存使用率（每个线程和总的）</p>
+<p>Free：查看内存、虚拟内存的使用情况。</p>
+<p>ps：查看进程详细信息。<br>ps  aux    ps –la    ps –ef </p>
+<p>netstat：一般查看网络连接情况。</p>
+<p>-t：tcp协议的连接</p>
+<p>-u：udp协议的连接</p>
+<p>-l：listen状态</p>
+<p>-n：不解析主机名，直接显示ip地址</p>
+<p>-p：进程ID和进程名</p>
+<p>netstat -tunlp | grep ‘8080’</p>
+<p>du：查看磁盘使用情况。</p>
+<h2 id="11、finally、final、finalize的区别"><a href="#11、finally、final、finalize的区别" class="headerlink" title="11、finally、final、finalize的区别"></a><strong>11、finally、final、finalize的区别</strong></h2><h3 id="1）、finally"><a href="#1）、finally" class="headerlink" title="1）、finally"></a><strong>1）、finally</strong></h3><p>java的一种异常处理机制。finally结构使代码总会执行，而不管有无异常的发生。使用finally可以维护对象的内部状态，并可以清理非内存资源，比如数据库连接、IO流等，大大降低程序出错的概率。</p>
+<h3 id="2）、final"><a href="#2）、final" class="headerlink" title="2）、final"></a><strong>2）、final</strong></h3><p>java中的关键字，修饰符。如果一个类被声明为final，就意味着它不能派生出新的子类，不能被作为父类被继承。因此一个类不能被同时声明为abstract抽象类和final类。如果变量被声明为final，除了初始化的时候，它的值可以被修改，之后都不允许修改。如果一个方法被声明为final，那么这方法无法被重载。</p>
+<h3 id="3）、finalize"><a href="#3）、finalize" class="headerlink" title="3）、finalize"></a><strong>3）、finalize</strong></h3><p>Java中的一个方法名。Java技术使用finalize()方法在垃圾收集器将对象从内存中清理出去前，做必要的清理工作。这个方法是由垃圾收集器在确定这个对象没有被引用要清理这个对象之前对这个对象的finalize()方法进行调用。它是Object类中定义的，所有的类都会继承这个方法。注意，finalize()方法只能被调用一次。</p>
+<h2 id="12、Object下的方法"><a href="#12、Object下的方法" class="headerlink" title="12、Object下的方法"></a><strong>12、Object下的方法</strong></h2><h3 id="1）、equals-方法"><a href="#1）、equals-方法" class="headerlink" title="1）、equals()方法"></a><strong>1）、equals()方法</strong></h3><p>public boolean equals(Object obj)，比较当前对象与ojb对象是否为同一个对象，返回值为：true/false。</p>
+<h3 id="2）、hashCode-方法"><a href="#2）、hashCode-方法" class="headerlink" title="2）、hashCode()方法"></a><strong>2）、hashCode()方法</strong></h3><p>public native int hashCode()，返回对象的Hash码，Hash码是标识对象的唯一标识。</p>
+<h3 id="3）、toString-方法"><a href="#3）、toString-方法" class="headerlink" title="3）、toString()方法"></a><strong>3）、toString()方法</strong></h3><p>public String toString()返回当前对象的字符串表示。</p>
+<h3 id="4）、wait-方法"><a href="#4）、wait-方法" class="headerlink" title="4）、wait()方法"></a><strong>4）、wait()方法</strong></h3><p>public void wati()在其他线程调用此对象的notify()方法或者notifyAll()方法前，导致当前线程等待。</p>
+<h3 id="5）、wait-long-timeout-方法"><a href="#5）、wait-long-timeout-方法" class="headerlink" title="5）、wait(long timeout)方法"></a><strong>5）、wait(long timeout)方法</strong></h3><p>public void wait(long timeout)在其他线程调用此对象的notify()方法或者notifyAll()方法前，或者超过指定时间量前，导致当前线程等待。</p>
+<h3 id="6）、wait-long-timeout-int-nanos-方法"><a href="#6）、wait-long-timeout-int-nanos-方法" class="headerlink" title="6）、wait(long timeout,int nanos)方法"></a><strong>6）、wait(long timeout,int nanos)方法</strong></h3><p>public void wait(long timeout,int nanos)在其他线程调用此对象的notify()方法或者notifyAll()方法，或者其他线程中断当前线程，或者已经超过某个执行时间前，导致当前线程等待。</p>
+<h3 id="7）、notify-方法"><a href="#7）、notify-方法" class="headerlink" title="7）、notify()方法"></a><strong>7）、notify()方法</strong></h3><p>public void notify()唤醒在此对象监视器上等待的单个线程。</p>
+<h3 id="8）、notifyAll-方法"><a href="#8）、notifyAll-方法" class="headerlink" title="8）、notifyAll()方法"></a><strong>8）、notifyAll()方法</strong></h3><p>public void notifyAll()唤醒此对象监视器上等待的所有线程。</p>
+<h3 id="9）、getClass-方法"><a href="#9）、getClass-方法" class="headerlink" title="9）、getClass()方法"></a><strong>9）、getClass()方法</strong></h3><p>Class&lt;?&gt; getClass()返回Object的运行类。</p>
+<h3 id="10）、finalize-方法"><a href="#10）、finalize-方法" class="headerlink" title="10）、finalize()方法"></a><strong>10）、finalize()方法</strong></h3><p>protected Object finalize()在垃圾收集器回收对象之前，调用此方法。</p>
+<h3 id="11）、clone-方法"><a href="#11）、clone-方法" class="headerlink" title="11）、clone()方法"></a><strong>11）、clone()方法</strong></h3><p>protected Object clone()返回此对象的一个副本。</p>
+<h2 id="13、-线程池"><a href="#13、-线程池" class="headerlink" title="13、**线程池**"></a><strong>13、**</strong>线程池**</h2><h3 id="1）、简介"><a href="#1）、简介" class="headerlink" title="1）、简介"></a><strong>1）、简介</strong></h3><p>如果并发的线程数量很多，并且每个线程都是执行一个时间很短的任务就结束了，这样频繁创建线程就会大大降低系统的效率，因为频繁创建线程和销毁线程需要时间。</p>
+<p>Java线程池通过线程的复用，就是执行完一个任务，并不被销毁，而是可以继续执行其他的任务，很好的处理上面提到的问题。</p>
+<h3 id="2）、-ThreadPoolExecutor-类"><a href="#2）、-ThreadPoolExecutor-类" class="headerlink" title="2）、**ThreadPoolExecutor**类"></a><strong>2）、**</strong>ThreadPoolExecutor<strong>**类</strong></h3><p>（1）、构造方法</p>
+<p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps34.png" alt="img"> </p>
+<p>（2）、构造函数参数说明</p>
+<p>corePoolSize：核心池的大小。</p>
+<p>maximumPoolSize：线程池最大线程数。</p>
+<p>keepAliveTime：表示线程没有任务执行时最多保持多久时间会终止。</p>
+<p>unit：参数keepAliveTime的时间单位，有7种取值，在TimeUnit类中有7种静态属性：</p>
+<p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps35.png" alt="img"> </p>
+<p>workQueue：一个阻塞队列，用来存储等待执行的任务，线程池的排队策略与BlockingQueue有关。一般来说，这里的阻塞队列有以下几种选择：</p>
+<p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps36.png" alt="img"> </p>
+<p>threadFactory：线程工厂，主要用来创建线程。</p>
+<p>handler：表示当拒绝处理任务时的策略，有以下四种取值：</p>
+<p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps37.png" alt="img"> </p>
+<h2 id="14、-JVM参数"><a href="#14、-JVM参数" class="headerlink" title="14、**JVM参数**"></a><strong>14、**</strong>JVM参数**</h2><p>-Xss：每个线程的stack大小（栈）</p>
+<p>-Xmx：JAVA HEAP的最大值，默认为物理内存的1/4</p>
+<p>-Xms：JAVA HEAP的初始值，server端最好Xms与Xmx一样</p>
+<p>-Xmn：JAVA HEAP young区的大小</p>
+<p>-XX:PermSize：设定内存的方法区（“永久代”）</p>
+<p>-XX:MaxPermSize：设定最大内存的方法区（“永久代”）</p>
+<p>-XX:+PrintGCDetails：记录GC运行期间的详细数据信息，包括新生占用的内存大小以及消耗的时间等。</p>
+<p>–XX:NewRatio：堆新生代与永久代的比例（默认是1：2）</p>
+<h2 id="15、Java推内存"><a href="#15、Java推内存" class="headerlink" title="15、Java推内存"></a><strong>15、Java推内存</strong></h2><h3 id="1）、简介-1"><a href="#1）、简介-1" class="headerlink" title="1）、简介"></a><strong>1）、简介</strong></h3><p>在 Java 中，堆被划分成两个不同的区域：新生代 ( Young )、老年代 ( Old )。新生代 ( Young ) 又被划分为三个区域：Eden、From Survivor、To Survivor。</p>
+<p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps38.jpg" alt="img"> </p>
+<p>从图中可以看出： 堆大小 = 新生代 + 老年代。其中，堆的大小可以通过参数 –Xms、-Xmx 来指定。</p>
+<p>默认的，新生代 ( Young ) 与老年代 ( Old ) 的比例的值为 1:2 ( 该值可以通过参数 –XX:NewRatio 来指定 )，即：新生代 ( Young ) = 1/3 的堆空间大小。</p>
+<p>老年代 ( Old ) = 2/3 的堆空间大小。其中，新生代 ( Young ) 被细分为 Eden 和 两个 Survivor 区域，这两个 Survivor 区域分别被命名为 from 和 to，以示区分。</p>
+<p>默认的，Edem : from : to = 8 : 1 : 1 ( 可以通过参数 –XX:SurvivorRatio 来设定 )，即： Eden = 8/10 的新生代空间大小，from = to = 1/10 的新生代空间大小。</p>
+<p>JVM 每次只会使用 Eden 和其中的一块 Survivor 区域来为对象服务，所以无论什么时候，总是有一块 Survivor 区域是空闲着的。</p>
+<p>因此，新生代实际可用的内存空间为 9/10 ( 即90% )的新生代空间。</p>
+<h3 id="2）、GC堆"><a href="#2）、GC堆" class="headerlink" title="2）、GC堆"></a><strong>2）、GC堆</strong></h3><p>Java 中的堆也是 GC 收集垃圾的主要区域。GC 分为两种：Minor GC、Full GC ( 或称为 Major GC )。</p>
+<p><strong>Minor GC 是发生在新生代中的垃圾收集动作，所采用的是复制算法。</strong></p>
+<p>新生代几乎是所有 Java 对象出生的地方，即 Java 对象申请的内存以及存放都是在这个地方。Java 中的大部分对象通常不需长久存活，具有朝生夕灭的性质。</p>
+<p>当一个对象被判定为 “死亡” 的时候，GC 就有责任来回收掉这部分对象的内存空间。新生代是 GC 收集垃圾的频繁区域。<br>当对象在 Eden ( 包括一个 Survivor 区域，这里假设是 from 区域 ) 出生后，在经过一次 Minor GC 后，如果对象还存活，并且能够被另外一块 Survivor 区域所容纳( 上面已经假设为 from 区域，这里应为 to 区域，即 to 区域有足够的内存空间来存储 Eden 和 from 区域中存活的对象 )，则使用复制算法将这些仍然还存活的对象复制到另外一块 Survivor 区域 ( 即 to 区域 ) 中，然后清理所使用过的 Eden 以及 Survivor 区域 ( 即 from 区域 )，并且将这些对象的年龄设置为1，以后对象在 Survivor 区每熬过一次 Minor GC，就将对象的年龄 + 1，当对象的年龄达到某个值时 ( 默认是 15 岁，可以通过参数 -XX:MaxTenuringThreshold 来设定 )，这些对象就会成为老年代。</p>
+<p>但这也不是一定的，对于一些较大的对象 ( 即需要分配一块较大的连续内存空间 ) 则是直接进入到老年代。</p>
+<p><strong>Full GC 是发生在老年代的垃圾收集动作，所采用的是标记-清除算法。</strong></p>
+<p>现实的生活中，老年代的人通常会比新生代的人 “早死”。堆内存中的老年代(Old)不同于这个，老年代里面的对象几乎个个都是在 Survivor 区域中熬过来的，它们是不会那么容易就 “死掉” 了的。因此，Full GC 发生的次数不会有 Minor GC 那么频繁，并且做一次 Full GC 要比进行一次 Minor GC 的时间更长。</p>
+<p>另外，标记-清除算法收集垃圾的时候会产生许多的内存碎片 ( 即不连续的内存空间 )，此后需要为较大的对象分配内存空间时，若无法找到足够的连续的内存空间，就会提前触发一次 GC 的收集动作。</p>
+<h2 id="16、注解"><a href="#16、注解" class="headerlink" title="16、注解"></a><strong>16、注解</strong></h2><h3 id="1）、元注解"><a href="#1）、元注解" class="headerlink" title="1）、元注解"></a><strong>1）、元注解</strong></h3><p><strong>1、简介</strong></p>
+<p>元注解的作用就是负责注解其他注解。Java5.0定义了4个标准的meta-annotation类型，它们被用来提供对其它 annotation类型作说明。Java5.0定义的元注解： @Target、@Retention、@Documented、@Inherited。这些类型和它们所支持的类在java.lang.annotation包中可以找到。</p>
+<p><strong>2、@Target</strong></p>
+<p>@Target说明了Annotation所修饰的对象范围（即：被描述的注解可以用在什么地方），取值有：</p>
+<ol>
+<li><p>ElementType.CONSTRUCTOR:用于描述构造器</p>
+</li>
+<li><p>ElementType.FIELD:用于描述域</p>
+</li>
+<li><p>ElementType.LOCAL_VARIABLE:用于描述局部变量</p>
+</li>
+<li><p>ElementType.METHOD:用于描述方法</p>
+</li>
+<li><p>ElementType.PACKAGE:用于描述包</p>
+</li>
+<li><p>ElementType.PARAMETER:用于描述参数</p>
+</li>
+<li><p>ElementType.TYPE:用于描述类、接口(包括注解类型) 或enum声明</p>
+</li>
+</ol>
+<p><strong>3、@**</strong>Retention**</p>
+<p>@Retention表示需要在什么级别保存该注释信息，用于描述注解的生命周期（即被描述的注解在什么范围内有效），取值有：</p>
+<p>1.SOURCE:在源文件中有效（即源文件保留）</p>
+<p>2.CLASS:在class文件中有效（即class保留）</p>
+<p>3.RUNTIME:在运行时有效（即运行时保留）</p>
+<p><strong>4、@**</strong>Documented**</p>
+<p>@Documented用于描述其它类型的annotation应该被作为被标注的程序成员的公共API，因此可以被例如javadoc此类的工具文档化。Documented是一个标记注解，没有成员。</p>
+<p><strong>5、@Inherited</strong></p>
+<p>@Inherited 元注解是一个标记注解，@Inherited阐述了某个被标注的类型是被继承的。如果一个使用了@Inherited修饰的annotation类型被用于一个class，则这个annotation将被用于该class的子类。</p>
+<p>例子:</p>
+<p>定义注解InheritedAnnotation1</p>
+<p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps39.png" alt="img"> </p>
+<p>定义父类Parent1：</p>
+<p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps40.png" alt="img"> </p>
+<p>定义子类Child1：</p>
+<p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps41.png" alt="img"> </p>
+<p>测试代码：</p>
+<p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps42.png" alt="img"> </p>
+<p>测试结果：</p>
+<p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps43.png" alt="img"> </p>
+<p><strong>由上面的例子可以看出，@Inherited注解只有在类上使用时有效，对于方法、属性等其他无效。</strong></p>
+<h3 id="2）、自定义注解"><a href="#2）、自定义注解" class="headerlink" title="2）、自定义注解"></a><strong>2）、自定义注解</strong></h3><p><strong>（1）、简介</strong></p>
+<p>使用@interface自定义注解时，自动继承了java.lang.annotation.Annotation接口，由编译程序自动完成其他细节。在定义注解时，不能继承其他的注解或接口。@interface用来声明一个注解，其中的每一个方法实际上是声明了一个配置参数。方法的名称就是参数的名称，返回值类型就是参数的类型（返回值类型只能是基本类型、Class、String、enum）。可以通过default来声明参数的默认值。</p>
+<p><strong>（2）、定义格式</strong></p>
+<p>public @interface 注解名 {定义体}</p>
+<p><strong>（3）、可支持数据类型</strong></p>
+<p>a.所有基本数据类型（int,float,boolean,byte,double,char,long,short)</p>
+<p>b.String类型</p>
+<p>c.Class类型</p>
+<p>d.enum类型</p>
+<p>e.Annotation类型</p>
+<p>f.以上所有类型的数组</p>
+<p><strong>（4）、默认值</strong></p>
+<p>注解元素必须有确定的值，要么在定义注解的默认值中指定，要么在使用注解时指定，非基本类型的注解元素的值不可为null。<strong>因此, 使用空字符串或-1作为默认值是一种常用的做法。</strong>这个约束使得处理器很难表现一个元素的存在或缺失的状态，因为每个注解的声明中，所有元素都存在，并且都具有相应的值，为了绕开这个约束，我们只能定义一些特殊的值，例如空字符串或者负数，一次表示某个元素不存在，在定义注解时，这已经成为一个习惯用法。</p>
+<h2 id="17、垃圾回收机制"><a href="#17、垃圾回收机制" class="headerlink" title="17、垃圾回收机制"></a><strong>17、垃圾回收机制</strong></h2><h3 id="1）、概述"><a href="#1）、概述" class="headerlink" title="1）、概述"></a><strong>1）、概述</strong></h3><p>Java垃圾回收器作为单独的低级别的线程，在不可预知的情况下对堆和方法区中已死亡或者长时间没有使用的对象进行清除和回收。程序员可以是System.gc()，通知GC运行，但是Java语言规范中不保证GC一定会执行。</p>
+<p>Java内存运行时区域的各部分，其中程序计数器、虚拟机栈、本地方法栈3个区域随着线程而生，随着线程而灭；栈中的栈帧随着方法的进入和退出而有条不絮地执行着入栈和出栈操作。每一个栈帧中分配多少内存基本上是在类结构确定下来时就已经知道了，因此这几个区域的内存分配和回收具备确定性，在这几个区域内存就不需要过多考虑回收的问题，因为方法结束或者线程结束时，内存自然就跟着回收了。Java堆和方法区则不一样，一个接口的多个实现类需要的内存可能不一样，一个方法中的多个分支需要的内存也可能不一样，我们只有在程序处于运行期间时才知道会创建哪些对象，这部分内存的分配和回收都是动态的，垃圾收集器所关注的是这部分内存的回收。</p>
+<h3 id="2）、判断对象是否存活"><a href="#2）、判断对象是否存活" class="headerlink" title="2）、判断对象是否存活"></a><strong>2）、判断对象是否存活</strong></h3><p><strong>（1）、引用计数算法</strong></p>
+<p>给每一个对象添加一个引用计数器，每当有一个地方引用到它时，计数器值就加1；当引用失效时，计数器就减1；任何时刻计数器为0的对象就是不可能再被引用的对象。</p>
+<p><strong>（2）、**</strong>可达性分析算法**</p>
+<p>可达性分析算法的基本思路是通过一系列被称为“GC Roots”的对象作为起始点，从这些节点开始向下搜索，搜索所走过的路径称为引用链，当一个对象到GC Roots没有任何引用链相连时，则证明此对象是不可达的，所以它们将会被判定为可回收对象。</p>
+<p>在Java语言中，可以被称为GC Roots的对象包括以下几种：</p>
+<p>a、虚拟机栈（栈中的本地变量表）中引用的对象。</p>
+<p>b、方法区中类静态属性引用的对象。</p>
+<p>c、方法区中常量引用的对象。</p>
+<p>d、本地方法栈中JNI（即一般说的native方法）引用的对象。</p>
+<p><img src="file:///C:%5CUsers%5CLM9157~1%5CAppData%5CLocal%5CTemp%5Cksohtml34540%5Cwps44.png" alt="img"> </p>
+<h3 id="3）、四种引用"><a href="#3）、四种引用" class="headerlink" title="3）、四种引用"></a><strong>3）、四种引用</strong></h3><p><strong>（1）、强引用</strong></p>
+<p>强引用就是指在程序代码中普遍存在的，类似“Object obj = new Object()”这类的引用，只要强引用还存在，垃圾收集器永远不会回收掉被引用的对象。</p>
+<p><strong>（2）、软引用</strong></p>
+<p>软引用是用来描述一些还有用但非必需的对象。对于软引用关联着的对象，在系统将要发生内存溢出异常之前，将会把这些对象列进回收范围之中进行第二次回收。如果这次回收还没有足够的内存，才会抛出内存溢出异常。在JDK 1.2之后，提供了SoftReference类来实现软引用。</p>
+<p><strong>（3）、弱引用</strong></p>
+<p>弱引用也用来描述非必需对象，但是它的强度比软引用更弱一些，被弱引用关联的对象只能生存到下一次垃圾收集发生之前。当垃圾收集器工作时，无论当前内存是否足够，都会回收掉被弱引用关联的对象。在JDK 1.2之后，提供了WeakReference类来实现弱引用。</p>
+<p><strong>（4）、虚引用</strong></p>
+<p>虚引用也称为幽灵引用或者幻影引用，它是最弱的一种引用关系。一个对象是否有虚引用的存在，完全不会对其生存时间构成影响，也无法通过虚引用来取得一个对象实例。为一个对象设置虚引用关联的唯一目的是能够在这个对象被收集器收集时收到一个系统通知。</p>
+
       
 
       
@@ -204,17 +543,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">cola</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -265,7 +593,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/06/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/06/02/Java%E5%9F%BA%E7%A1%80/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -405,10 +733,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">cola</a>
-              </li>
             
             <div class="clearfix"></div>
           </ul>
